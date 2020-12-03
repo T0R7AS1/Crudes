@@ -22,7 +22,7 @@
                         <tr>
                             <td>{{ $companies->pavadinimas }}</td>
                             <td>{{ $companies->epastas }}</td>
-                            <td width="10%"><img src="{{ URL::to('/') }}/images/{{ $companies->image }}" width="75" alt=""></td>
+                            <td width="10%"><img src="{{ URL::to('/') }}/storage/{{ $companies->image }}" width="75" alt=""></td>
                             <td>
                                 <a href="/companies/{{$companies->id}}" class="btn btn-info">More</a>
                                 <a href="/companies/{{$companies->id}}/edit" class="btn btn-warning d-inline ">Edit</a>

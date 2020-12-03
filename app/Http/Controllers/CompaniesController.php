@@ -49,7 +49,7 @@ class CompaniesController extends Controller
         $image = $request->file('image');
 
         $new_name = rand() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('images'),$new_name);
+        $image->move(public_path('storage'),$new_name);
         $form_data = array (
             'pavadinimas' => $request->pavadinimas,
             'epastas' => $request->epastas,
