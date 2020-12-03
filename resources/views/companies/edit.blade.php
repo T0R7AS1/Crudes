@@ -38,7 +38,7 @@
                                     <label class=" mb-1" for="inputProjectname">Logo Of The Company</label>
                                     <div class="form-group">
                                         <input type="file" name="image" class="mb-4">
-                                        <img src="{{ URL::to('/') }}/images/{{ $company->image}}" width="100" alt="">
+                                        <img src="{{ URL::to('/') }}/storage/{{ $company->image}}" width="100" alt="">
                                         <input type="hidden" name="hidden_image" value="{{$company->image}}">
                                     </div>
                                     <input type="submit" class="btn btn-success btn-block mt-4 mb-2" name="add" value="Update">

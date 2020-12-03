@@ -105,7 +105,7 @@ class CompaniesController extends Controller
                 'image' => 'nullable|max:2040'
             ]);
             $image_name = rand() . '.' . $image->getClientOriginalExtension();
-            $image ->move(public_path('images'), $image_name);
+            $image ->move(public_path('storage'), $image_name);
         }else{
             $request->validate([
                 'pavadinimas' => 'required',
